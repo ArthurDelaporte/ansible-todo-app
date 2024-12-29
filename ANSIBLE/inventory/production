@@ -1,0 +1,5 @@
+[web]
+localhost ansible_connection=local
+
+[db]
+localhost ansible_connection=local ansible_python_interpreter=/usr/bin/python3 ansible_mysql_user=root ansible_mysql_password=root

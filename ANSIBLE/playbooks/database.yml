@@ -1,0 +1,21 @@
+- name: Install and configure MySQL
+  hosts: db
+  become: yes
+  tasks:
+    - name: Test MySQL Connection
+      command: mysql -u "{{ ansible_mysql_user }}" -p"{{ ansible_mysql_password }}" -e "SHOW DATABASES;"
+
+    - name: Install MySQL Server
+      apt:
+        name: mysql-server
+        state: present
+
+    - name: Start MySQL Service
+      command: service mysql start
+
+    - name: Create Todo Database
+      mysql_db:
+        name: todo
+        state: present
+        login_user: "{{ ansible_mysql_user }}"
+        login_password: "{{ ansible_mysql_password }}"

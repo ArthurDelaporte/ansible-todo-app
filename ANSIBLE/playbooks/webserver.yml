@@ -1,0 +1,18 @@
+- name: Install and configure Apache web server
+  hosts: web
+  become: yes
+  tasks:
+    - name: Update package manager cache
+      apt:
+        update_cache: yes
+
+    - name: Install Apache
+      apt:
+        name: apache2
+        state: present
+
+    - name: Enable Apache Rewrite Module
+      command: a2enmod rewrite
+
+    - name: Restart Apache Service
+      command: service apache2 restart
