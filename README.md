@@ -21,4 +21,4 @@ Ce fichier fournit un guide vers les différentes parties de la documentation du
 ---
 
 ## **Contact**
-Pour toute question ou suggestion, contactez-nous via nos profils GitHub mentionnés dans [README-membres.md](./README-membres.md).
+Pour toute question ou suggestion, contactez-nous via nos profils GitHub mentionnés dans [membres.md](membres.md).
