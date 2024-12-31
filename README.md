@@ -20,11 +20,5 @@ Ce fichier fournit un guide vers les différentes parties de la documentation du
 
 ---
 
-## **Structure des fichiers**
-- Placez chaque README.md dans un sous-dossier ou avec un nom explicite.
-- Maintenez une hiérarchie claire pour faciliter la navigation.
-
----
-
 ## **Contact**
 Pour toute question ou suggestion, contactez-nous via nos profils GitHub mentionnés dans [README-membres.md](./README-membres.md).
