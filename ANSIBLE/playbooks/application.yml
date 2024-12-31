@@ -1,0 +1,28 @@
+- name: Deploy Todo-PHP Application
+  hosts: web
+  become: yes
+  tasks:
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+
+    - name: Clone Todo-PHP Repository
+      git:
+        repo: https://github.com/ArthurDelaporte/ansible-todo-app.git
+        dest: /var/www/todo-php
+
+    - name: Configure Database Connection
+      lineinfile:
+        path: /var/www/todo-php/TODO-Application/database.php
+        regexp: 'define\(.*DB_PASSWORD.*\);'
+        line: "define('DB_PASSWORD', 'root');"
+
+    - name: Set permissions for the application
+      file:
+        path: /var/www/todo-php
+        state: directory
+        owner: www-data
+        group: www-data
+        mode: '0755'
+        recurse: yes

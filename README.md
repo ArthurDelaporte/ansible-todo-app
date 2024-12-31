@@ -1,15 +1,30 @@
-# TodoList-in-PHP
-- Simple todo list application.
-- Basic CRUD operations on task, create account, delete account, change password etc.
-- Project demo : https://youtu.be/ui3Bh1-ZnkA
-- Technology used : Php and Mysql database, Html, Css
 
-### How to run ?
-- Install [PHP](https://www.php.net/), [Mysql](https://www.mysql.com/).
-- create Mysql [database tables](https://github.com/Dhiraj-01/TodoList-PHP/blob/master/TODO-Application/create_database.sql).
-- download this repository.
-- add your database in `database.php` => `connectdatabase()` function.
-- open cmd prompt and goto `TODO-Application` folder
-- type `php -S localhost:4000` enter
-- open browser `http://localhost:4000/login.php`
-- done.
+# Référencement des fichiers README.md
+
+Ce fichier fournit un guide vers les différentes parties de la documentation du projet.
+
+---
+
+## **Liste des fichiers :**
+1. **[Comment lancer les playbooks](lancer-playbooks.md)**
+    - Explications pour exécuter les playbooks Ansible.
+
+2. **[Accéder au projet une fois déployé](acces-projet.md)**
+    - Guide pour accéder à l'application déployée.
+
+3. **[Membres du groupe](membres.md)**
+    - Liste des membres ayant travaillé sur le projet.
+
+4. **[Projet choisi](projet-choisi.md)**
+    - Détails sur le projet Todo-PHP sélectionné.
+
+---
+
+## **Structure des fichiers**
+- Placez chaque README.md dans un sous-dossier ou avec un nom explicite.
+- Maintenez une hiérarchie claire pour faciliter la navigation.
+
+---
+
+## **Contact**
+Pour toute question ou suggestion, contactez-nous via nos profils GitHub mentionnés dans [README-membres.md](./README-membres.md).
